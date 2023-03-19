@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>705</width>
+    <height>688</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>News App</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(126, 220, 85);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="news_label">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>20</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Print</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 10, 75);</string>
+    </property>
+    <property name="text">
+     <string>Query:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="query_lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>20</y>
+      <width>381</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Print</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 127);
+color: rgb(9, 80, 5);
+border-radius: 10px;
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="search_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>567</x>
+      <y>20</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 112, 0);
+font: 10pt &quot;Segoe Print&quot;;
+color: rgb(170, 244, 255);
+border-radius: 15px;</string>
+    </property>
+    <property name="text">
+     <string>Search</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>704</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clear_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>580</y>
+      <width>121</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(170, 255, 127);
+font: 10pt &quot;Segoe Print&quot;;
+background-color: rgb(78, 106, 106);</string>
+    </property>
+    <property name="text">
+     <string>Clear Content</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="art1_listWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>151</y>
+      <width>701</width>
+      <height>171</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="title1_label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>70</y>
+      <width>701</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Print</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 85, 0);
+background-color: rgb(172, 255, 239);
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>Title Of Article1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="date1_label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>110</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Print</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(172, 255, 239); 
+background-color:rgb(0, 85, 0);
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>Published_Date</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="authors1_label">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>110</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Print</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 85, 0);
+background-color: rgb(172, 255, 239);
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>Authors</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="taccount1_label">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>110</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Print</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(172, 255, 239); 
+background-color:rgb(0, 85, 0);
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>Twitter_Account</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="title2_label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>330</y>
+      <width>701</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Print</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(172, 255, 239); 
+background-color:rgb(0, 85, 0);
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>Title Of Article2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="date2_label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>370</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Print</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 85, 0);
+background-color: rgb(172, 255, 239);
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>Published_Date</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="authors2_label">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>370</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Print</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(172, 255, 239); 
+background-color:rgb(0, 85, 0);
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>Authors</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="taccount2_label">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>370</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Print</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 85, 0);
+background-color: rgb(172, 255, 239);
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>Twitter_Account</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="art2_listWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>410</y>
+      <width>701</width>
+      <height>171</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="link1_label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>610</y>
+      <width>691</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>IBeamCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(78, 106, 106);
+font: 8pt &quot;Segoe Print&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="link2_label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>640</y>
+      <width>691</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>IBeamCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(78, 106, 106);
+font: 8pt &quot;Segoe Print&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
